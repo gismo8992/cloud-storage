@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:controller="appController.Controller" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="315.0" prefWidth="566.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ListView fx:id="clientView" editable="true" fixedCellSize="1.0" layoutX="14.0" layoutY="37.0" prefHeight="263.0" prefWidth="236.0" AnchorPane.bottomAnchor="14.800000000000011" />
+      <ListView fx:id="serverView" layoutX="314.0" layoutY="37.0" prefHeight="263.0" prefWidth="236.0" />
+      <Button onAction="#upload" layoutX="257.0" layoutY="180.0" mnemonicParsing="false" prefHeight="88.0" prefWidth="52.0" text="&lt;">
+         <font>
+            <Font name="Calibri Light" size="24.0" />
+         </font>
+      </Button>
+      <Button onAction="#download" layoutX="257.0" layoutY="70.0" mnemonicParsing="false" prefHeight="88.0" prefWidth="52.0" text="&gt;">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <TextField editable="false" layoutX="14.0" layoutY="12.0" prefHeight="26.0" prefWidth="206.0" />
+      <TextField editable="false" layoutX="314.0" layoutY="12.0" prefHeight="26.0" prefWidth="205.0" />
+      <Button onAction="#clientPathUp" layoutX="219.0" layoutY="12.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="31.0" text="Button" />
+      <Button onAction="#clientPathDown" layoutX="519.0" layoutY="12.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="31.0" text="Button" />
+   </children>
+</AnchorPane>
