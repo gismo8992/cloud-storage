@@ -33,7 +33,7 @@ public class Controller implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         try {
             currentDir = Paths.get("dir").toAbsolutePath();
-            Socket socket = new Socket("localhost", 8195);
+            Socket socket = new Socket("localhost", 8866);
             os = new ObjectEncoderOutputStream(socket.getOutputStream());
             is = new ObjectDecoderInputStream(socket.getInputStream());
 

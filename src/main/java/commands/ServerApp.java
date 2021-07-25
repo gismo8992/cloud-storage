@@ -32,7 +32,7 @@ public class ServerApp {
                         );
                     }
                 });
-        ChannelFuture future = bootstrap.bind(8189).sync();
+        ChannelFuture future = bootstrap.bind(8866).sync();
         log.debug("Server started...");
         future.channel().closeFuture().sync();
         auth.shutdownGracefully();

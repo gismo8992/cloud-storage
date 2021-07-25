@@ -2,6 +2,7 @@
   <library name="lib">
     <CLASSES>
       <root url="file://D:/programs/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib" />
+      <root url="file://D:/programs/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
@@ -70,8 +71,11 @@
       <root url="file://D:/JAVA/netty-netty-4.1.66.Final/netty-netty-4.1.66.Final/transport-udt/src/test/java" />
       <root url="file://D:/JAVA/netty-netty-4.1.66.Final/netty-netty-4.1.66.Final/transport/src/main/java" />
       <root url="file://D:/JAVA/netty-netty-4.1.66.Final/netty-netty-4.1.66.Final/transport/src/test/java" />
+      <root url="file://D:/programs/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib" />
     </SOURCES>
     <jarDirectory url="file://D:/programs/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib" recursive="false" />
+    <jarDirectory url="file://D:/programs/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib" recursive="false" />
+    <jarDirectory url="file://D:/programs/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib" recursive="false" type="SOURCES" />
     <jarDirectory url="file://D:/programs/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib" recursive="false" type="SOURCES" />
   </library>
 </component>
