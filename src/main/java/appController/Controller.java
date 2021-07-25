@@ -21,7 +21,6 @@ import java.util.stream.Collectors;
 
 public class Controller implements Initializable {
 
-
     public ListView<String> clientView;
     public ListView<String> serverView;
     public TextField clientPath;
@@ -30,12 +29,11 @@ public class Controller implements Initializable {
     private ObjectEncoderOutputStream os;
     private ObjectDecoderInputStream is;
 
-
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         try {
             currentDir = Paths.get("dir").toAbsolutePath();
-            Socket socket = new Socket("localhost", 8189);
+            Socket socket = new Socket("localhost", 8195);
             os = new ObjectEncoderOutputStream(socket.getOutputStream());
             is = new ObjectDecoderInputStream(socket.getInputStream());
 
