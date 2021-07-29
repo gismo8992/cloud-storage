@@ -8,6 +8,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
+import lombok.extern.slf4j.Slf4j;
 
 import java.io.IOException;
 import java.net.Socket;
@@ -18,6 +19,8 @@ import java.nio.file.Paths;
 import java.util.List;
 import java.util.ResourceBundle;
 import java.util.stream.Collectors;
+
+@Slf4j
 
 public class Controller implements Initializable {
 
@@ -32,8 +35,10 @@ public class Controller implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         try {
-            currentDir = Paths.get("dir").toAbsolutePath();
-            Socket socket = new Socket("localhost", 8866);
+            String userDir = System.getProperty("user.name");
+            currentDir = Paths.get("/Users", userDir).toAbsolutePath();
+            log.info("Current user: {}", System.getProperty("user.name"));
+            Socket socket = new Socket("localhost", 8189);
             os = new ObjectEncoderOutputStream(socket.getOutputStream());
             is = new ObjectDecoderInputStream(socket.getInputStream());
 
